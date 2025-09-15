@@ -1,13 +1,12 @@
 class RemoveDuplicates{
     public static void main(String args[]){
-        int arr[]={1,2,3,1,2,3,4,5,10,11,23,43,43};
+        int arr[]={1,1,2};
         int newArray[]=new int[arr.length];
         int newIndex=0;
-        newArray[0]=arr[0];
 
-        for(int i=0; i<arr.length-1 ; i++){
+        for(int i=0; i<arr.length ; i++){
             boolean isFound=false;
-            for(int j=0; j<i ; j++){
+            for(int j=0; j<newIndex ; j++){            
                 if(newArray[j]==arr[i]){
                     isFound=true;
                     break;
