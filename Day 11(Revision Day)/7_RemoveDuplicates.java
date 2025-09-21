@@ -22,3 +22,19 @@ class RemoveDuplicates{
 
     }
 }
+
+class RemoveDuplicatesOptimize{
+    public static void main(String args[]){
+        int nums[]={100,2,3,2,3,2,1,3,4};
+        Set<Integer> seen = new HashSet<>();
+        List<Integer> result=new ArrayList<>();
+
+        for(int num:nums){
+            if(seen.add(num)){
+                result.add(num);
+            }
+        }
+
+        System.out.print("Array are "+result);
+    }
+}
