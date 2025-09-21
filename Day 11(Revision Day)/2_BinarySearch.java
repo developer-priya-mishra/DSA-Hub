@@ -1,4 +1,4 @@
-class LinearSearch{
+class BinarySearch{
     public static void main(String args[]){
         int nums[]={1,2,3,4,5};
         int key=40;
