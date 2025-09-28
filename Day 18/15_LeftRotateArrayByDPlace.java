@@ -3,6 +3,7 @@ class LeftRotateArrayByDPlace{
         int nums[]={6,7,8,1, 2, 3, 4,5};
         int temp[]=new int[nums.length];
         int d=3;
+        d=d%nums.length;
 
         for(int i=0;i<d;i++){
             temp[i]=nums[i];
