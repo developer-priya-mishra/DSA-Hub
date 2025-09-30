@@ -1,19 +1,18 @@
 class PrintFibonacciSeries{
-    public static void fibSeries(int i,int a, int b, int sum, int n){
-        if(i==n){
-            sum=a+b;
-            System.out.print(sum);
+    public static void fibSeries(int a, int b,int n){
+        if(n==0){
             return;
         }
-        sum = a+b;
+        int sum = a+b;
         System.out.print(sum+", ");
-        a=b;
-        b=sum;
-        fibSeries(i+1,a,b,sum,n);
+        fibSeries(b,sum,n-1);
     }
 
     public static void main(String args[]){
-        System.out.print("0, 1, ");
-        fibSeries(3,0,1,0,10);
+        int a=0;
+        int b=1;
+        System.out.print(a+", "+b+", ");
+        int n=7;
+        fibSeries(a,b,n-2);
     }
 }
